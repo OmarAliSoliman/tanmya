@@ -21,20 +21,21 @@ function renderDate() {
 
     let today = new Date();
 
-    let months = [
-        "يناير",
-        "فيرلير",
-        "ملرس",
-        "ابريل",
-        "مايو",
-        "يونيو",
-        "يوليو",
-        "اغسطس",
-        "سبتمبر",
-        "اكتوبر",
-        "نوفمبر",
-        "ديسمبر"
-    ];
+
+let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
 
     document.getElementById("icalendarMonth").innerHTML = months[dt.getMonth()] + " , " + dt.getFullYear();
     document.getElementById("icalendarDateStr").innerHTML = "";
@@ -76,6 +77,5 @@ function moveDate(param) {
 
     renderDate();
 }
-
 
 
