@@ -381,6 +381,16 @@ hr {
       font-weight: bold; }
   .article .card-train .card-body {
     padding-bottom: 0; }
+  .article .card-train .training-slider .card-body {
+    position: relative; }
+    .article .card-train .training-slider .card-body .time {
+      position: absolute;
+      left: 0;
+      background-color: rgba(26, 68, 51, 0.9);
+      font-size: 14px;
+      padding: 7px;
+      color: #fff;
+      border-top-left-radius: 10px; }
   .article .card-train .training-slider .itew-slider:focus {
     outline: 0; }
   .article .card-train .training-slider .slick-dots {
@@ -629,7 +639,8 @@ hr {
     .contact-form .my-contact-form p {
       font-weight: bold;
       font-size: 12px; }
-    .contact-form .my-contact-form .form-group, .contact-form .my-contact-form .btn-submit {
+    .contact-form .my-contact-form .form-group,
+    .contact-form .my-contact-form .btn-submit {
       width: 70%;
       margin: auto;
       margin-top: 15px; }
@@ -836,6 +847,97 @@ footer {
     .copy .funun-logo img {
       width: 100px; }
 
+.our-versions-page .versions .item-slider .card {
+  height: auto !important; }
+.our-versions-page .pagination .page-item .page-link {
+  line-height: 30px !important; }
+.our-versions-page .all-versions .section-header {
+  margin-top: 0;
+  margin-bottom: 40px; }
+.our-versions-page .all-versions .all-version-row {
+  padding-top: 60px;
+  border-top: 1px solid #f1f1f1; }
+.our-versions-page .all-versions .card {
+  border: 0;
+  margin: 10px; }
+  .our-versions-page .all-versions .card img {
+    height: 370px; }
+.our-versions-page .training-links {
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -40px; }
+  .our-versions-page .training-links h5 {
+    color: #008531;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px; }
+  .our-versions-page .training-links .ul-links li {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px;
+    transition: 0.5s; }
+    .our-versions-page .training-links .ul-links li:before {
+      content: "\f0d9";
+      color: #888;
+      font-size: 14px;
+      margin-left: 5px; }
+    .our-versions-page .training-links .ul-links li a {
+      color: #000;
+      text-decoration: none; }
+    .our-versions-page .training-links .ul-links li:hover {
+      transform: translateX(-4px); }
+  .our-versions-page .training-links .ul-links li:last-child {
+    border-bottom: 0; }
+.our-versions-page .images-div img {
+  margin: 3px;
+  height: 75px; }
+
+.article-pic {
+  margin: 50px; }
+  .article-pic img {
+    height: 450px;
+    border-radius: 15px; }
+
+.article-option {
+  margin-top: 20px;
+  margin-bottom: 80px; }
+  .article-option .share {
+    background-color: #20c9e4;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    margin-left: 30px; }
+    .article-option .share::after {
+      position: absolute;
+      content: "\f0d9";
+      color: #20c9e4;
+      left: -10px;
+      font-size: 30px;
+      top: 1px; }
+  .article-option .options .icon {
+    padding: 8px;
+    color: #fff;
+    text-decoration: none; }
+    .article-option .options .icon i {
+      border-left: 1px solid #fff;
+      margin-left: 10px;
+      padding-left: 10px; }
+    .article-option .options .icon span {
+      font-size: 12px;
+      padding-left: 10px; }
+  .article-option .options .plus-icon {
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    padding: 8px;
+    margin-right: 10px; }
+  .article-option .options .facebook-icon {
+    background-color: #3a559f; }
+  .article-option .options .twitter-icon {
+    background-color: #52acf1; }
+  .article-option .options .linkedin-icon {
+    background-color: #0084b1; }
+  .article-option .options .whatsapp-icon {
+    background-color: #1bd741; }
+
 @media (max-width: 1024px) {
   .top-header .social-search .social i {
     width: 25px;
@@ -896,11 +998,28 @@ footer {
   .contact-form .my-contact-form {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     position: unset; }
-    .contact-form .my-contact-form .form-group, .contact-form .my-contact-form .btn-submit {
+    .contact-form .my-contact-form .form-group,
+    .contact-form .my-contact-form .btn-submit {
       width: 100%; }
 
   .our-news-page .pagination {
-    width: 35% !important; } }
+    width: 35% !important; }
+
+  .our-versions-page .training-links {
+    margin-top: 0px; }
+  .our-versions-page .images-div {
+    margin-top: 10px; }
+    .our-versions-page .images-div img {
+      width: 40%;
+      float: right;
+      margin: 3px;
+      height: 75px; }
+
+  .article-pic {
+    margin: 50px; }
+    .article-pic img {
+      height: 400px;
+      border-radius: 15px; } }
 @media (max-width: 524px) {
   .top-header .social-search .txt-lf {
     text-align: right !important; }
@@ -916,8 +1035,33 @@ footer {
     max-width: 100%; }
 
   .our-news-page .pagination {
-    width: 50% !important; } }
-.header-slider .my-slider-wrapper .slick-prev::before, .header-slider .my-slider-wrapper .slick-next::before, .family-news .news-slider .slick-prev::before, .family-news .news-slider .slick-next::before, .choses .choses-slider .slick-prev::before, .choses .choses-slider .slick-next::before, .article .card .card-header .archive::after, .our-versions .slick-prev::before, .our-versions .slick-next::before, .path .path-wrapper a::before {
+    width: 50% !important; }
+
+  .our-versions-page .images-div img {
+    width: 80%; }
+
+  .article-option .share {
+    display: inline-block;
+    margin-bottom: 20px; }
+    .article-option .share:after {
+      content: "\f0d7";
+      left: 24px;
+      top: 25px; }
+  .article-option .options {
+    display: block; }
+    .article-option .options .icon {
+      display: block;
+      margin-top: 10px; }
+    .article-option .options .plus-icon {
+      display: inline-block;
+      margin-top: 10px; }
+
+  .article-pic {
+    margin: 50px; }
+    .article-pic img {
+      height: 250px;
+      border-radius: 15px; } }
+.header-slider .my-slider-wrapper .slick-prev::before, .header-slider .my-slider-wrapper .slick-next::before, .family-news .news-slider .slick-prev::before, .family-news .news-slider .slick-next::before, .choses .choses-slider .slick-prev::before, .choses .choses-slider .slick-next::before, .article .card .card-header .archive::after, .our-versions .slick-prev::before, .our-versions .slick-next::before, .path .path-wrapper a::before, .our-versions-page .training-links .ul-links li:before, .article-option .share::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900; }
 

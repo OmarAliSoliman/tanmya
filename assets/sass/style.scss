@@ -553,6 +553,18 @@ hr {
       padding-bottom: 0;
     }
     .training-slider {
+      .card-body{
+        position: relative;
+        .time {
+          position: absolute;
+          left: 0;
+          background-color: rgba(26, 68, 51, 0.9);
+          font-size: 14px;
+          padding: 7px;
+          color: #fff;
+          border-top-left-radius: 10px;
+        }
+      }
       .itew-slider {
         &:focus {
           outline: 0;
@@ -879,16 +891,16 @@ hr {
   }
 }
 
-.contact-form{
+.contact-form {
   margin-top: 60px;
   margin-bottom: 50px;
-  .map-iframe{
-    iframe{
-      border-radius: 20px ;
+  .map-iframe {
+    iframe {
+      border-radius: 20px;
     }
   }
-  .my-contact-form{
-    box-shadow: -9px 10px 5px 0px  rgba(0,0,0,.15);
+  .my-contact-form {
+    box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.15);
     background-color: #fff;
     width: 100%;
     padding: 40px;
@@ -896,32 +908,33 @@ hr {
     margin-top: 40px;
     position: absolute;
     right: -100px;
-    h5{
+    h5 {
       color: $mainColor;
       font-size: 30px;
       font-weight: bold;
       margin: 0;
     }
-    p{
+    p {
       font-weight: bold;
       font-size: 12px;
     }
-    .form-group, .btn-submit{
+    .form-group,
+    .btn-submit {
       width: 70%;
       margin: auto;
       margin-top: 15px;
     }
-    .form-group{
-      .form-control{
+    .form-group {
+      .form-control {
         border-radius: 10px;
-        &::placeholder{
+        &::placeholder {
           font-size: 14px;
           color: #888;
         }
       }
     }
-    .btn-submit{
-      .btn{
+    .btn-submit {
+      .btn {
         background-color: $mainColor;
         border-radius: 20px;
         width: 100%;
@@ -932,7 +945,7 @@ hr {
 }
 
 // start our news page =============================================================================================
-.our-news-page{
+.our-news-page {
   margin-top: 40px;
   .card {
     border: 0;
@@ -998,13 +1011,13 @@ hr {
 }
 
 // training page =============================================================================================================
-.training-page{
-  .card{
+.training-page {
+  .card {
     position: relative;
-    .time{
+    .time {
       position: absolute;
       left: 0;
-      background-color: rgba(26, 68, 51, .9);
+      background-color: rgba(26, 68, 51, 0.9);
       font-size: 14px;
       padding: 7px;
       color: #fff;
@@ -1023,7 +1036,7 @@ hr {
 
 // start our coses page ================================================================================================
 
-.our-choses-page{
+.our-choses-page {
   .card {
     border: 1px solid #f1f1f1;
     border-radius: 10px;
@@ -1082,9 +1095,9 @@ hr {
 }
 
 // start article-page =============================================================================================================
-.article-page{
-  .time{
-    background-color: rgba(0, 133, 49, .7) !important;
+.article-page {
+  .time {
+    background-color: rgba(0, 133, 49, 0.7) !important;
     padding: 0 !important;
     width: 40px;
     height: 40px;
@@ -1202,6 +1215,148 @@ footer {
   }
 }
 
+// start our versions page ====================================================================================================================
+.our-versions-page {
+  .versions {
+    .item-slider {
+      .card {
+        height: auto !important;
+      }
+    }
+  }
+  .pagination {
+    .page-item {
+      .page-link {
+        line-height: 30px !important;
+      }
+    }
+  }
+  .all-versions {
+    .section-header {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    .all-version-row {
+      padding-top: 60px;
+      border-top: 1px solid #f1f1f1;
+    }
+    .card {
+      border: 0;
+      margin: 10px;
+      img {
+        height: 370px;
+      }
+    }
+  }
+  .training-links {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -40px;
+    // width: 100%;
+    h5 {
+      color: $mainColor;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 10px;
+    }
+    .ul-links {
+      li {
+        border-bottom: 1px solid #f1f1f1;
+        padding: 10px;
+        transition: 0.5s;
+        &:before {
+          @extend %initlizeFonAwesomeAfter;
+          content: "\f0d9";
+          color: #888;
+          font-size: 14px;
+          margin-left: 5px;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+        &:hover {
+          transform: translateX(-4px);
+        }
+      }
+      li:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  .images-div {
+    img {
+      margin: 3px;
+      height: 75px;
+    }
+  }
+}
+
+// start article page ==============================================================================================================
+.article-pic {
+  margin: 50px;
+  img {
+    height: 450px;
+    border-radius: 15px;
+  }
+}
+
+.article-option {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  .share {
+    background-color: #20c9e4;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    margin-left: 30px;
+    &::after {
+      position: absolute;
+      @extend %initlizeFonAwesomeAfter;
+      content: "\f0d9";
+      color: #20c9e4;
+      left: -10px;
+      font-size: 30px;
+      top: 1px;
+    }
+  }
+
+  .options {
+    .icon {
+      padding: 8px;
+      color: #fff;
+      text-decoration: none;
+      i {
+        border-left: 1px solid #fff;
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+      span {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+    .plus-icon {
+      border: 1px solid #f1f1f1;
+      background-color: #fff;
+      padding: 8px;
+      margin-right: 10px;
+    }
+    .facebook-icon {
+      background-color: #3a559f;
+    }
+    .twitter-icon {
+      background-color: #52acf1;
+    }
+    .linkedin-icon {
+      background-color: #0084b1;
+    }
+    .whatsapp-icon {
+      background-color: #1bd741;
+    }
+  }
+}
+
 // start media
 
 @media (max-width: 1024px) {
@@ -1292,18 +1447,40 @@ footer {
       text-align: right;
     }
   }
-  .contact-form{
-    .my-contact-form{
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  .contact-form {
+    .my-contact-form {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       position: unset;
-      .form-group, .btn-submit{
+      .form-group,
+      .btn-submit {
         width: 100%;
       }
     }
   }
-  .our-news-page{
+  .our-news-page {
     .pagination {
       width: 35% !important;
+    }
+  }
+  .our-versions-page {
+    .training-links {
+      margin-top: 0px;
+    }
+    .images-div {
+      margin-top: 10px;
+      img {
+        width: 40%;
+        float: right;
+        margin: 3px;
+        height: 75px;
+      }
+    }
+  }
+  .article-pic {
+    margin: 50px;
+    img {
+      height: 400px;
+      border-radius: 15px;
     }
   }
 }
@@ -1333,9 +1510,45 @@ footer {
       }
     }
   }
-  .our-news-page{
+  .our-news-page {
     .pagination {
       width: 50% !important;
+    }
+  }
+  .our-versions-page {
+    .images-div {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .article-option {
+    .share {
+      display: inline-block;
+      margin-bottom: 20px;
+      &:after {
+        content: "\f0d7";
+        left: 24px;
+        top: 25px;
+      }
+    }
+    .options {
+      display: block;
+      .icon {
+        display: block;
+        margin-top: 10px;
+      }
+      .plus-icon {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  }
+  .article-pic {
+    margin: 50px;
+    img {
+      height: 250px;
+      border-radius: 15px;
     }
   }
 }
