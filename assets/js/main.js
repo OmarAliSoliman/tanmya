@@ -129,6 +129,15 @@ $(document).ready(function(){
     ]
   });
 
+  $(function() {
+    $('.js-conveyor-1').jConveyorTicker({
+      anim_duration:   200,    
+      reverse_elm:     false,   
+      force_loop:      false,  
+      start_paused:    false,
+    });
+  });
+
 })
 
 

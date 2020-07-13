@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
-  <link rel="stylesheet" href="./assets/css/javascript-calendar.css">
   <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/css/jquery.jConveyorTicker.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
@@ -24,7 +24,24 @@
         <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="parqyat">
             <button class="btn">برقيات</button>
-            <span>هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوى المقروء لصفحة </span>
+            <div class="js-conveyor-1">
+              <ul>
+                <li>
+                  <span>انا عمر علي سلسمان</span>
+                </li>
+                <li>
+                  <a href="https://duckduckgo.com/">
+                    <span>دوس هنا عشان تروح لمكان معين</span>
+                  </a>
+                </li>
+                <li>
+                  <span>هذا النص قابل للتعديل <em>براحتك</em></span>
+                </li>
+                <li>
+                  <span>هذا نصتاني خالص</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -33,7 +50,6 @@
               <div class="col-md-6 col-lg-4 txt-lf">
                 <a href="#" class="eng">
                   <span>English</span>
-                  <img src="./assets/images/usa.png" alt="">
                 </a>
               </div>
               <div class="col-md-6 col-lg-4">
@@ -49,6 +65,12 @@
                   <img src="./assets/images/search.png" alt="">
                   <input type="text" name="" id="" class="form-control" placeholder="ابحث هنا">
                 </form>
+              </div>
+              <div class="col-sm-12 col-lg-12">
+                <div class="dates">
+                  <span>الثلاثاء 11 ذو القعدة 1443</span>
+                  <span>23 حزيران / يونيو 2020</span>
+                </div>
               </div>
             </div>
           </div>
@@ -88,8 +110,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">من نحن</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">اخبارنا</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              اخبارنا
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">جديد اخبارنا</a>
+              <a class="dropdown-item" href="#">اخبار فروعنا</a>
+              <a class="dropdown-item" href="#">برقيات اسرية</a>
+              <a class="dropdown-item" href="#">اخبار مصورة</a>
+              <a class="dropdown-item" href="#">تطبيقات صحفيه</a>
+              <a class="dropdown-item" href="#">اخبار اسرية</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">اصداراتنا</a>
@@ -531,33 +563,48 @@
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div class="icalendar">
-                <div class="icalendar__month">
-                  <div class="icalendar__prev" onclick="moveDate('prev')">
-                    <span>&#10094</span>
-                  </div>
-                  <div class="icalendar__current-"><a href="https://www.jqueryscript.net/time-clock/"></a>
-                    <h2 id="icalendarMonth"></h2>
-                    <div>
-                      <div id="icalendarDateStr"></div>
+            <div class="login-form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="my-login-form">
+                      <h5 class="head">ادارة الموقع</h5>
+                      <form action="">
+                        <div class="row">
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="اسم المستخدم هنا">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp" placeholder="كلمة المرور هنا">
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                تذكرني
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="btn-submit">
+                              <button type="submit" class="btn btn-block">تسجيل الدخول</button>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-12">
+                            <div class="forget">
+                              <h6><a href="">نسيت كلمة المرور</a></h6>
+                              <h6><a href="">نسيت اسم المستخدم</a></h6>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
-                  <div class="icalendar__next" onclick="moveDate('next')">
-                    <span>&#10095</span>
-                  </div>
                 </div>
-                <div class="icalendar__week-days">
-                  <!-- Localize names of the days of the week -->
-                  <div>Sun</div>
-                  <div>Mon</div>
-                  <div>Tue</div>
-                  <div>Wed</div>
-                  <div>Thu</div>
-                  <div>Fri</div>
-                  <div>Sat</div>
-                </div>
-                <div class="icalendar__days"></div>
               </div>
             </div>
           </div>
@@ -813,6 +860,54 @@
   </div>
   <!-- end subscribe -->
 
+   <!-- start banners -->
+   <div class="our-versions choses baners">
+    <div class="container">
+      <div class="section-header">
+        <h6>البنرات</h6>
+        <p>جميع البنرات الخاصة بنا</p>
+      </div>
+      <div class="versions-slider" dir="ltr">
+        <div class="item-slider">
+          <div class="card">
+            <a href="">
+              <img  src="./assets/images/tr1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="item-slider">
+          <div class="card">
+            <a href="">
+              <img  src="./assets/images/tr2.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="item-slider">
+          <div class="card">
+            <a href="">
+              <img  src="./assets/images/tr3.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="item-slider">
+          <div class="card">
+            <a href="">
+              <img  src="./assets/images/tr4.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="item-slider">
+          <div class="card">
+            <a href="">
+              <img  src="./assets/images/tr1.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end baners -->
+
   <!-- start our versions -->
   <div class="our-versions choses">
     <div class="container">
@@ -947,8 +1042,9 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./assets/js/slick.min.js"></script>
-  <script src="./assets/js/javascript-calendar.js"></script>
+  <!-- <script src="./assets/js/javascript-calendar.js"></script> -->
   <script src="./assets/js/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/jquery.jConveyorTicker.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
