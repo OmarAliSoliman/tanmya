@@ -96,6 +96,16 @@ img {
   background-image: url('../images/headerbar-bg.jpg');
   background-size: cover;
   line-height: 60px;
+  .slider-item{
+    a{
+      color: #fff;
+    }
+  }
+
+  .phone{
+    color: #fff;
+  }
+
   .parqyat {
     text-align: right;
     .btn {
@@ -169,19 +179,7 @@ img {
       border-right: 0;
     }
   }
-
-  .my-news-slider{
-    overflow: hidden;
-    a{
-      color: #fff;
-    }
-  }
-  .phone{
-    text-align: right;
-    color: #fff;
-  }
 }
-
 // start logo
 .logo {
   text-align: center;
@@ -1579,7 +1577,7 @@ footer {
 
 @media (max-width: 524px) {
   .top-header {
-    line-height: 30px;
+    // line-height: 30px;
     .dates{
       text-align: right;
     }

@@ -70,6 +70,12 @@ img {
   background-size: cover;
   line-height: 60px;
 }
+.top-header .slider-item a {
+  color: #fff;
+}
+.top-header .phone {
+  color: #fff;
+}
 .top-header .parqyat {
   text-align: right;
 }
@@ -141,16 +147,6 @@ img {
 .top-header .dates span:first-child {
   padding-left: 10px;
   border-right: 0;
-}
-.top-header .my-news-slider {
-  overflow: hidden;
-}
-.top-header .my-news-slider a {
-  color: #fff;
-}
-.top-header .phone {
-  text-align: right;
-  color: #fff;
 }
 
 .logo {
@@ -1376,9 +1372,6 @@ footer .about-site ul li::before {
   }
 }
 @media (max-width: 524px) {
-  .top-header {
-    line-height: 30px;
-  }
   .top-header .dates {
     text-align: right;
   }
