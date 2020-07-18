@@ -138,6 +138,26 @@ $(document).ready(function(){
     });
   });
 
+
+  if($('.my-news-slider').length){
+    $('.my-news-slider').slick({
+      arrows: false,
+      dots: true,
+      vertical: true,
+      verticalSwiping: true,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
+
 })
 
 

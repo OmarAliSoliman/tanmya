@@ -66,7 +66,8 @@ img {
 
 .top-header {
   height: auto;
-  background-color: #f9f9f9;
+  background-image: url("../images/headerbar-bg.jpg");
+  background-size: cover;
   line-height: 60px;
 }
 .top-header .parqyat {
@@ -78,6 +79,7 @@ img {
   color: #fff;
   height: 30px;
   width: 70px;
+  line-height: 10px;
 }
 .top-header .parqyat span {
   font-size: 14px;
@@ -98,7 +100,7 @@ img {
   text-align: left;
 }
 .top-header .eng {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .top-header .eng span {
@@ -128,7 +130,8 @@ img {
   border-radius: 40px;
 }
 .top-header .dates {
-  text-align: center;
+  text-align: right;
+  color: #fff;
 }
 .top-header .dates span {
   font-size: 15px;
@@ -138,6 +141,16 @@ img {
 .top-header .dates span:first-child {
   padding-left: 10px;
   border-right: 0;
+}
+.top-header .my-news-slider {
+  overflow: hidden;
+}
+.top-header .my-news-slider a {
+  color: #fff;
+}
+.top-header .phone {
+  text-align: right;
+  color: #fff;
 }
 
 .logo {
@@ -149,9 +162,13 @@ img {
   height: 66px;
 }
 
+.nav-bar-hr {
+  position: relative;
+}
+
 hr {
   position: absolute;
-  top: 210px;
+  bottom: 11px;
   width: 100%;
   background-color: #ececec;
 }
@@ -1261,6 +1278,9 @@ footer .about-site ul li::before {
   .top-header .dates {
     text-align: center;
   }
+  .top-header .top-header-img {
+    display: none;
+  }
   .top-header .parqyat .btn {
     width: 50px;
     height: 20px;
@@ -1356,11 +1376,17 @@ footer .about-site ul li::before {
   }
 }
 @media (max-width: 524px) {
+  .top-header {
+    line-height: 30px;
+  }
   .top-header .dates {
     text-align: right;
   }
   .top-header .social-search .txt-lf {
     text-align: right !important;
+  }
+  .top-header .my-news-slider, .top-header .parqyat {
+    display: none;
   }
 
   .header-slider .slick-prev {

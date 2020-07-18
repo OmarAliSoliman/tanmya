@@ -93,7 +93,8 @@ img {
 // start top header
 .top-header {
   height: auto;
-  background-color: #f9f9f9;
+  background-image: url('../images/headerbar-bg.jpg');
+  background-size: cover;
   line-height: 60px;
   .parqyat {
     text-align: right;
@@ -103,6 +104,7 @@ img {
       color: #fff;
       height: 30px;
       width: 70px;
+      line-height: 10px;
     }
     span {
       font-size: 14px;
@@ -124,7 +126,7 @@ img {
     text-align: left;
   }
   .eng {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     span {
       margin-left: 3px;
@@ -155,7 +157,8 @@ img {
     }
   }
   .dates{
-    text-align: center;
+    text-align: right;
+    color: #fff;
     span{
       font-size: 15px;
       border-right: 1px solid #DDD;
@@ -165,6 +168,17 @@ img {
       padding-left: 10px;
       border-right: 0;
     }
+  }
+
+  .my-news-slider{
+    overflow: hidden;
+    a{
+      color: #fff;
+    }
+  }
+  .phone{
+    text-align: right;
+    color: #fff;
   }
 }
 
@@ -181,9 +195,12 @@ img {
 }
 
 // startnavbar
+.nav-bar-hr{
+  position: relative;
+}
 hr {
   position: absolute;
-  top: 210px;
+  bottom: 11px;
   width: 100%;
   background-color: #ececec;
 }
@@ -1453,6 +1470,9 @@ footer {
     .dates{
       text-align: center;
     }
+    .top-header-img{
+      display: none;
+    }
     .parqyat {
       .btn {
         width: 50px;
@@ -1559,6 +1579,7 @@ footer {
 
 @media (max-width: 524px) {
   .top-header {
+    line-height: 30px;
     .dates{
       text-align: right;
     }
@@ -1566,6 +1587,9 @@ footer {
       .txt-lf {
         text-align: right !important;
       }
+    }
+    .my-news-slider, .parqyat{
+      display: none;
     }
   }
   .header-slider {
